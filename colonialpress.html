@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Printer Bashed for Opinion</title>
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f6f1e7;
+      color: #2c2c2c;
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #e2d3b3;
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+      border-bottom: 4px double #5b4636;
+    }
+
+    header h1 {
+      font-family: 'UnifrakturCook', cursive;
+      font-size: 3.5rem;
+      margin: 0;
+      text-shadow: 1px 1px 0 #aaa;
+    }
+
+    header p {
+      font-style: italic;
+      font-size: 1.2rem;
+    }
+
+    nav {
+      background-color: #d4c5a5;
+      border-bottom: 2px solid #5b4636;
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #2c2c2c;
+      font-weight: bold;
+      font-size: 0.9rem;
+      position: relative;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      background-color: #fffdf6;
+      border: 2px solid #c1b59a;
+      box-shadow: 4px 4px 0 #d6c9a3;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
+
+    .author-date {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 1rem;
+      font-style: italic;
+    }
+
+    .post-image {
+      width: 100%;
+      max-width: 700px;
+      margin: 1rem auto;
+      display: block;
+      border: 1px solid #aaa;
+    }
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+    }
+
+    .quote {
+      font-style: italic;
+      border-left: 4px solid #5b4636;
+      padding-left: 1rem;
+      margin: 2rem 0;
+      color: #444;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #e2d3b3;
+      border-top: 4px double #5b4636;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f6f1e7;
+      color: #2c2c2c;
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #e2d3b3;
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+      border-bottom: 4px double #5b4636;
+    }
+
+    header h1 {
+      font-family: 'UnifrakturCook', cursive;
+      font-size: 3.5rem;
+      margin: 0;
+      text-shadow: 1px 1px 0 #aaa;
+    }
+
+    header p {
+      font-style: italic;
+      font-size: 1.2rem;
+    }
+
+    nav {
+      background-color: #d4c5a5;
+      border-bottom: 2px solid #5b4636;
+      padding: 0.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .nav-item {
+      position: relative;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #2c2c2c;
+      font-weight: bold;
+      font-size: 0.9rem;
+      padding: 0.5rem;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #fffdf6;
+      border: 1px solid #5b4636;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+      z-index: 999;
+      padding: 0.5rem;
+      min-width: 160px;
+    }
+
+    .dropdown a {
+      display: block;
+      padding: 0.25rem 0;
+      color: #2c2c2c;
+      font-size: 0.85rem;
+    }
+
+    .nav-item:hover .dropdown {
+      display: block;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .headline {
+      font-size: 1.6rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      border-bottom: 2px solid #5b4636;
+      padding-bottom: 0.5rem;
+    }
+
+    .post {
+      display: flex;
+      gap: 1rem;
+      margin: 2rem 0;
+      padding: 1rem;
+      border: 2px solid #c1b59a;
+      background-color: #fffdf6;
+      box-shadow: 4px 4px 0 #d6c9a3;
+      flex-direction: row;
+    }
+
+    .post-content {
+      flex: 1;
+    }
+
+    .post h2 {
+      font-size: 1.3rem;
+      margin: 0 0 0.5rem;
+    }
+
+    .post .date {
+      font-style: italic;
+      font-size: 0.8rem;
+      color: #555;
+      margin-bottom: 0.5rem;
+    }
+
+    .post p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .post img {
+      max-width: 180px;
+      height: auto;
+      border: 1px solid #ccc;
+    }
+
+    .quote-box {
+      font-style: italic;
+      border-left: 4px solid #5b4636;
+      padding-left: 1rem;
+      margin: 1rem 0;
+      color: #444;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #e2d3b3;
+      border-top: 4px double #5b4636;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1><a href="index.html" style="text-decoration:none; color:black;">Uncle Tom's Cabinet</a></h1>
+    <p>The Civil Dispatches of a Nation Unhinged</p>
+  </header>
+
+  <nav>
+    <div class="nav-item">
+      <a href="#">States</a>
+      <div class="dropdown">
+        <a href="civilwarapproach.html">Politics</a>
+        <a href="#">Expansion</a>
+        
+      </div>
+    </div>
+  
+
+    </div>
+    <div class="nav-item">
+      <a href="#">Pastimes of the Privileged</a>
+      <div class="dropdown">
+        <a href="#">Etiquette</a>
+        <a href="#">Fashion</a>
+        <a href="#">Home Life</a>
+      </div>
+    </div>
+  
+    <div class="nav-item">
+      <a href="#">The Cabinet</a>
+      <div class="dropdown">
+        <a href="#">Etiquette</a>
+        <a href="#">Fashion</a>
+        <a href="#">Home Life</a>
+      </div>
+    </div>
+
+  </nav>
+
+
+  <div class="container">
+    <h2>Local Printer Arrested After Publishing Scandalous “Opinion” — Crown Officials Alarmed by Presence of Thought'</h2>
+    <p class="author-date">By Johnny Magna | May 27, 1852</p>
+
+
+
+    <p>
+      A colonial printer was taken into custody yesterday after daring to publish what authorities are calling “an unauthorized arrangement of personal beliefs,” also known as an <i>opinion</i>. Witnesses say the man, identified as Silas Dobbins of the Boston Quarter, distributed a pamphlet containing “sentences that suggested men might think without royal supervision. This behavior deemed unacceptable by the royal court of Britain cannot go unpunished. However, various individuals show support for Dobbins behind closed doors.
+
+    </p>
+
+    <p>
+         Dobbins’ publication, titled <i>“A Mild Suggestion Concerning Taxes and the Nature of Human Freedom”</i>, was seized immediately by Crown constables. One official, trembling as he held read the taxation on tea section, described it as “an attempted coup d'état in ink.”
+    </p>
+
+    <div class="quote">
+       “We tolerate all manners of speech,” declared Magistrate Henry Blisterwell, “so long as it contains the very values that is ingrained in British society.”  
+      <br>— Local Councilman
+    </div>
+
+    <img src="https://www.prepressure.com/images/lithography-printing-press.jpg" alt="Campfire panic" class="post-image">
+
+      <p>
+      Authorities have since cordoned off Dobbins’ print shop, confiscating every page containing verbs longer than three syllables. Several apprentices were detained after allegedly whispering “perhaps he’s got a point” within earshot of a loyalist tavern.
+    </p>
+
+    <p>
+      “The true danger,” said Royal Inspector of Morality Edmund Prattle, “isn’t what he printed—it’s that others may begin to *read* it. We must stop ideas before they multiply. They’re like rats, but with better grammar.”
+    </p>
+
+    <p>
+      In a show of swift justice, His Majesty’s Council has proposed a new law requiring all colonial presses to submit their ink to the Church before publication “to ensure holiness and proper punctuation.” A secondary measure would fine anyone found using adjectives without a license.
+    </p>
+
+    <div class="quote">
+      “It began as a pamphlet,” said one alarmed bystander, “and by next week, who knows—someone might start asking questions.”
+    </div>
+
+    <p>
+      Dobbins is subject to mandatory treatment for what officials called, "Diarrehea of the Mouth" and "Constipation of the Brain" He faces up to ten years of re-education or, worse, employment as a government writer.
+    </p>
+
+    <p>
+      As of press time, Crown officials assured the public that order has been restored, truth has been detained, and the colony may once again rest easy in the gentle arms of authorized ignorance.
+    </p>
+  </div>
+
+  <footer>
+    &copy; 1852 Uncle Tom's Cabin Satirical Times. All parchment rights reserved.
+  </footer>
+</body>
+</html>
