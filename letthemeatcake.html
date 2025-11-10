@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Let Them Eat Cake | Uncle Tom's Cabinet</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', serif;
+      background-color: #faf9f7;
+      color: #2c2c2c;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      margin-top: 40px;
+      font-size: 2.5em;
+      letter-spacing: 1px;
+    }
+
+    .catalog {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70vh;
+      overflow: hidden;
+    }
+
+    .item {
+      display: none;
+      transition: transform 0.5s ease;
+    }
+
+    .item.active {
+      display: block;
+      transform: scale(1.1);
+    }
+
+    .item img {
+      width: 320px;
+      height: auto;
+      border: 2px solid #d6cfc4;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      border-radius: 8px;
+      transition: transform 0.4s;
+    }
+
+    .caption {
+      margin-top: 15px;
+      font-size: 1.1em;
+      font-style: italic;
+      color: #3e3e3e;
+    }
+
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 2.5em;
+      cursor: pointer;
+      user-select: none;
+      color: #bcae8f;
+    }
+
+    .arrow:hover {
+      color: #8e7e5b;
+    }
+
+    .left {
+      left: 10%;
+    }
+
+    .right {
+      right: 10%;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <h1>Let Them Eat Cake</h1>
+  <p><em>A brief catalog of what the luxurious are buying</em></p>
+
+  <div class="catalog">
+    <div class="arrow left" onclick="prevItem()">&#10094;</div>
+
+    <div class="item active">
+      <img src="https://i.postimg.cc/cHzYNKQX/Lovely-Watch.png" alt="Pocket Watch Warmer" />
+      <p class="caption">Pocket Watch Warmer.</p>
+    </div>
+
+    <div class="item">
+      <img src="icecreamplaceholder!" alt="Icre Cream!" />
+      <p class="caption">Is it Gold? Is it Chocolate? No, it's Ice Cream!.</p>
+    </div>
+
+    <div class="item">
+      <img src="placeholder4premium02" alt="Premium O2" />
+      <p class="caption">Handcrafted Alpine Air — bottled at the peak of pretension.</p>
+    </div>
+
+    <div class="arrow right" onclick="nextItem()">&#10095;</div>
+  </div>
+
+  <footer>
+    <p>From the Cabinet of Excess | © Uncle Tom's Cabinet</p>
+  </footer>
+
+  <script>
+    const items = document.querySelectorAll('.item');
+    let current = 0;
+
+    function showItem(index) {
+      items[current].classList.remove('active');
+      current = (index + items.length) % items.length;
+      items[current].classList.add('active');
+    }
+
+    function nextItem() {
+      showItem(current + 1);
+    }
+
+    function prevItem() {
+      showItem(current - 1);
+    }
+  </script>
+</body>
+</html>
