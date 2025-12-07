@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Southern Man Condemns Asia</title>
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f6f1e7;
+      color: #2c2c2c;
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #e2d3b3;
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+      border-bottom: 4px double #5b4636;
+    }
+
+    header h1 {
+      font-family: 'UnifrakturCook', cursive;
+      font-size: 3.5rem;
+      margin: 0;
+      text-shadow: 1px 1px 0 #aaa;
+    }
+
+    header p {
+      font-style: italic;
+      font-size: 1.2rem;
+    }
+
+    nav {
+      background-color: #d4c5a5;
+      border-bottom: 2px solid #5b4636;
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #2c2c2c;
+      font-weight: bold;
+      font-size: 0.9rem;
+      position: relative;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      background-color: #fffdf6;
+      border: 2px solid #c1b59a;
+      box-shadow: 4px 4px 0 #d6c9a3;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
+
+    .author-date {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 1rem;
+      font-style: italic;
+    }
+
+    .post-image {
+      width: 100%;
+      max-width: 700px;
+      margin: 1rem auto;
+      display: block;
+      border: 1px solid #aaa;
+    }
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+    }
+
+    .quote {
+      font-style: italic;
+      border-left: 4px solid #5b4636;
+      padding-left: 1rem;
+      margin: 2rem 0;
+      color: #444;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #e2d3b3;
+      border-top: 4px double #5b4636;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f6f1e7;
+      color: #2c2c2c;
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #e2d3b3;
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+      border-bottom: 4px double #5b4636;
+    }
+
+    header h1 {
+      font-family: 'UnifrakturCook', cursive;
+      font-size: 3.5rem;
+      margin: 0;
+      text-shadow: 1px 1px 0 #aaa;
+    }
+
+    header p {
+      font-style: italic;
+      font-size: 1.2rem;
+    }
+
+    nav {
+      background-color: #d4c5a5;
+      border-bottom: 2px solid #5b4636;
+      padding: 0.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .nav-item {
+      position: relative;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #2c2c2c;
+      font-weight: bold;
+      font-size: 0.9rem;
+      padding: 0.5rem;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #fffdf6;
+      border: 1px solid #5b4636;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+      z-index: 999;
+      padding: 0.5rem;
+      min-width: 160px;
+    }
+
+    .dropdown a {
+      display: block;
+      padding: 0.25rem 0;
+      color: #2c2c2c;
+      font-size: 0.85rem;
+    }
+
+    .nav-item:hover .dropdown {
+      display: block;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .headline {
+      font-size: 1.6rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      border-bottom: 2px solid #5b4636;
+      padding-bottom: 0.5rem;
+    }
+
+    .post {
+      display: flex;
+      gap: 1rem;
+      margin: 2rem 0;
+      padding: 1rem;
+      border: 2px solid #c1b59a;
+      background-color: #fffdf6;
+      box-shadow: 4px 4px 0 #d6c9a3;
+      flex-direction: row;
+    }
+
+    .post-content {
+      flex: 1;
+    }
+
+    .post h2 {
+      font-size: 1.3rem;
+      margin: 0 0 0.5rem;
+    }
+
+    .post .date {
+      font-style: italic;
+      font-size: 0.8rem;
+      color: #555;
+      margin-bottom: 0.5rem;
+    }
+
+    .post p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .post img {
+      max-width: 180px;
+      height: auto;
+      border: 1px solid #ccc;
+    }
+
+    .quote-box {
+      font-style: italic;
+      border-left: 4px solid #5b4636;
+      padding-left: 1rem;
+      margin: 1rem 0;
+      color: #444;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #e2d3b3;
+      border-top: 4px double #5b4636;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1><a href="index.html" style="text-decoration:none; color:black;">Uncle Tom's Cabinet</a></h1>
+    <p>The Civil Dispatches of a Nation Unhinged</p>
+  </header>
+
+  <nav>
+    <div class="nav-item">
+      <a href="#">States</a>
+      <div class="dropdown">
+        <a href="civilwarapproach.html">Politics</a>
+        <a href="#">Expansion</a>
+        
+      </div>
+    </div>
+  
+
+    </div>
+    <div class="nav-item">
+      <a href="#">Pastimes of the Privileged</a>
+      <div class="dropdown">
+        <a href="#">Let them eat cake!</a>
+        <a href="#">Activities</a>
+        <a href="#">The Art of Doing Nothing</a>
+      </div>
+    </div>
+  
+    <div class="nav-item">
+      <a href="#">The Cabinet</a>
+      <div class="dropdown">
+        <a href="#">Trending items</a>
+      </div>
+    </div>
+
+  </nav>
+
+
+  <div class="container">
+    <h2>Southern Man SHOCKED after being subject to "less than human” treatment.</h2>
+    <p class="author-date">By Joan D. Coughefeller | July 1, 1852</p>
+
+<p>
+Mr. Bartholomew Cripps, a self-proclaimed connoisseur of foreign manners, returned this week from a pilgrimage to Mecca with urgent warnings for his neighbors. According to local reports, Cripps spent several weeks abroad, during which he was compelled to pick his own crops and wash his own garments — an ordeal he insists was “entirely unbefitting a gentleman of West Virginia.”
+</p>
+
+
+<p>
+Neighbors nodded solemnly, relieved to reaffirm their belief that labor is only respectable when performed by someone else.
+</p>
+
+<p>
+“Tea was made at once for Mr. Cripps upon his return,” reported one acquaintance. “He was not expected to fetch it himself, of course. There are other people for that”
+</p>
+
+<p class="quote-box">
+Upon hearing the horror stories, the Town Judge felt physically ill. He had to rest for a few hours, occasionally muttering, "Why would a man do that?", a few times in his sleep.
+</p>
+
+<p>
+Meanwhile, the enslaved individuals who had been forced to serve Mr. Cripps abroad reportedly expressed sympathy for his plight, though Cripps could sense bouts of laughter behind his back. He was right.
+</p>
+</div>
+
+    
+
+  <footer>
+    &copy; 1852 Uncle Tom's Cabin Satirical Times. All parchment rights reserved.
+  </footer>
+</body>
+</html>
